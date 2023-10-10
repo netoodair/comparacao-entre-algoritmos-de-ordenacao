@@ -11,7 +11,7 @@ def graph(x_axis, y_axis, p, title, func_type="n^2"):
 
     plt.plot(x_axis, y_axis, 'o', label='dados')
 
-    xx = np.linspace(0, 10000, 100)
+    xx = np.linspace(0, 170000, 100)
 
     if func_type == "n^2":
         yy = p[0] + p[1]*xx**2
@@ -36,7 +36,7 @@ def graph(x_axis, y_axis, p, title, func_type="n^2"):
 
 def comp_graph(begin, end, p):
     for i in range(begin, end):
-        xx = np.linspace(0, 10000, 100)
+        xx = np.linspace(0, 170000, 100)
     
         if i < 3 :
             yy = p[i][0] + p[i][1]*xx**2
@@ -92,7 +92,7 @@ def run_file(my_args):
 if __name__ == '__main__':
 
     step = 1000
-    end = 10000
+    end = 170000
 
     path = "build/"
     files = ["bubble", "selection", "insertion", "merge", "quick", "heap"]
@@ -164,7 +164,3 @@ if __name__ == '__main__':
         f.write("    range : " + str(range_l[i]) + "\n    var   : " + str(variance[i]) + "\n    sd    : " + str(sd[i]) + "\n\n")
     
     f.close()
-        
-
-
-    

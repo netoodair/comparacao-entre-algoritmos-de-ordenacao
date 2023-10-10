@@ -11,10 +11,10 @@ POSFIX = _sort.exe
 COMPILER = gcc
 
 all:
-	$(COMPILER) -g $(UTILS) $(SORTS)/bubble_sort.c -o bubble$(POSFIX)
-	$(COMPILER) -g $(UTILS) $(SORTS)/insertion_sort.c -o insertion$(POSFIX)
-	$(COMPILER) -g $(UTILS) $(SORTS)/selection_sort.c -o selection$(POSFIX)
-	$(COMPILER) -g $(UTILS) $(SORTS)/heap_sort.c -o heap$(POSFIX)
-	$(COMPILER) -g $(UTILS) $(SORTS)/merge_sort.c -o merge$(POSFIX)
-	$(COMPILER) -g $(UTILS) $(SORTS)/quick_sort.c -o quick$(POSFIX)
+	$(COMPILER) -Ofast $(UTILS) $(SORTS)/bubble_sort.c -o bubble$(POSFIX)
+	$(COMPILER) -Ofast $(UTILS) $(SORTS)/insertion_sort.c -o insertion$(POSFIX)
+	$(COMPILER) -Ofast $(UTILS) $(SORTS)/selection_sort.c -o selection$(POSFIX)
+	$(COMPILER) -Ofast $(UTILS) $(SORTS)/heap_sort.c -o heap$(POSFIX)
+	$(COMPILER) -Ofast $(UTILS) $(SORTS)/merge_sort.c -o merge$(POSFIX)
+	$(COMPILER) -Ofast $(UTILS) $(SORTS)/quick_sort.c -o quick$(POSFIX)
 
